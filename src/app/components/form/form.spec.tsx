@@ -1,4 +1,4 @@
-import { render } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 
 import Form from './Form';
 
@@ -9,7 +9,9 @@ describe('Form', () => {
   });
 
   it('should render title', () => {
-    const { baseElement } = render(<Form title="Test Title" />);
-    expect(baseElement).toBeTruthy();
+    const { getByRole } = render(<Form title="Test Title" />);
+    expect(getByRole('heading', {
+      name: /test title/i
+    })).toBeTruthy();
   });
 });

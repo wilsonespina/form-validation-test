@@ -32,15 +32,13 @@ export function Form({ title }: FormProps) {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
-    console.log({
-      email,
-      password,
-      colour,
-      animals,
-      tigerType
-    })
-
-    console.log('Form submitted');
+    alert(`Form Submitted with the following data:
+      email: ${email}
+      password: ${password}
+      colour: ${colour}
+      animals: ${JSON.stringify(animals)}
+      tigerType: ${tigerType}
+    `);
   }
 
   const handleInput = (e: React.ChangeEvent<HTMLInputElement> | React.ChangeEvent<HTMLSelectElement>, setter: (x: string) => void) => {

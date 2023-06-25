@@ -1,13 +1,19 @@
-import { getGreeting } from '../support/app.po';
-
 describe('springload-forms-test', () => {
   beforeEach(() => cy.visit('/'));
 
-  it('should display welcome message', () => {
-    // Custom command example, see `../support/commands.ts` file
-    cy.login('my-email@something.com', 'myPassword');
+  it('should have correct heading', () => {
+    cy.get('h1').contains('Contact Form');
+  });
 
-    // Function helper example, see `../support/app.po.ts` file
-    getGreeting().contains('Welcome springload-forms-test');
+  it('should submit form', () => {
+    cy.get('#email').type('testemail@email.com')
+    cy.get('#password').type('12345678910')
+    cy.get('form').contains('Submit').click();
+
+    // Checking the window alert text
+    cy.on('window:alert',(txt) => {
+    	expect(txt).to.contains('email: testemail@email.com');
+    	expect(txt).to.contains('password: 1234567891');
+    });
   });
 });

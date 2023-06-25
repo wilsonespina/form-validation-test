@@ -40,4 +40,12 @@ export default defineConfig({
     environment: 'jsdom',
     include: ['src/**/*.{test,spec}.{js,mjs,cjs,ts,mts,cts,jsx,tsx}'],
   },
+  // e2e: {
+  //   globals: true,
+  //   cache: {
+  //     dir: './node_modules/.vitest',
+  //   },
+  //   environment: 'jsdom',
+  //   include: ['e2e/**/*.{test,spec}.{js,mjs,cjs,ts,mts,cts,jsx,tsx}'],
+  // },
 });
