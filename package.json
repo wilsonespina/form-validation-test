@@ -7,14 +7,11 @@
     "build": "nx build",
     "test:unit": "nx test",
     "test:e2e": "nx run e2e:e2e",
-    "test": "npm run test:unit && npm run test:e2e",
-    "predeploy" : "npm run build",
-    "deploy" : "gh-pages -d build"
+    "test": "npm run test:unit && npm run test:e2e"
   },
   "private": true,
   "dependencies": {
     "@swc/helpers": "~0.5.0",
-    "gh-pages": "^5.0.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-use": "^17.4.0",
