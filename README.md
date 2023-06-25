@@ -13,7 +13,14 @@ npm run start
 ## Running tests
 
 ```bash
+# all tests
 npm run test
+
+# unit tests
+npm run test:unit
+
+# e2e tests
+npm run test:e2e
 ```
 
 ## Technologies used
@@ -27,9 +34,10 @@ npm run test
 
 Browser Support:
 Tailwind css takes care of vendor prefixes
-Validation:
 
-* Password - Max length 20 so as to limit character entry and prevent malicious entry
+## Validation:
+
+* Password - Legnth has to be between 8 - 20 characters.
 
 ## Future Refactoring
 
