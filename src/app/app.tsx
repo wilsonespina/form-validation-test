@@ -1,13 +1,11 @@
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-import styles from './app.module.css';
+import Form from './components/form/form';
 
-import NxWelcome from './nx-welcome';
 
 export function App() {
   return (
-    <div>
-      <NxWelcome title="springload-forms-test" />
-    </div>
+  <main className="flex justify-center pt-8">
+    <Form title="Contact Form"/>
+  </main>
   );
 }
 
