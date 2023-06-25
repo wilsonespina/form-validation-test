@@ -1,5 +1,9 @@
 # Springload test
 
+https://forms-validation-test.netlify.app/
+
+<img src="./src/assets/form-validation-test.png" width="400px"/>
+
 ## Running the app
 
 Requirements
@@ -32,14 +36,13 @@ npm run test:e2e
     * React testing lib for unit tests
     * Cypress snapshot (visual test)
 
-Browser Support:
-Tailwind css takes care of vendor prefixes
+* Browser Support - Tailwind css takes care of vendor prefixes
 
 ## Validation:
 
-* Password - Legnth has to be between 8 - 20 characters.
+* Password - Length has to be between 8 - 20 characters.
 
 ## Future Refactoring
 
-* Make Form more reusable by accepting props for form elements
-* 
+* Make Form more reusable by accepting props for form elements.
+* Add more integration tests on more parts of the form.
