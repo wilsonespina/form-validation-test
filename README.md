@@ -44,6 +44,7 @@ npm run test:e2e
 
 ## Future Refactoring
 
-* Make Form more reusable by making it more generic and not just the Contact Form. This could be done by passing through form fields as props to the component.
+* Server-side render the application using a tool like [Next.js](https://nextjs.org/) to ensure users can view the page when javascript is disabled.
+* Make the `Form` component more reusable by making it more generic and not just the Contact Form. This could be done by passing through form fields as props to the component.
 * Remove placeholders for form submit.
 * Add more integration tests on more parts of the form.
